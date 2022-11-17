@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+p {
+  font-size: clamp(1.5rem, 1.3vw + 0.2rem, 1.8rem);
+}
+
+#header__text-form__form-submit-button {
+  font-size: clamp(1rem, 0.8vw + 0.2rem, 1.6rem);
+  background: hsl(224deg, 93%, 58%);
+  border: none;
+  color: hsl(240deg, 75%, 98%);
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
+  display: block;
+  margin: auto;
+  font-weight: 600;
+  white-space: normal;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 3.5px;
+}
+#header__text-form__form-submit-button:hover {
+  background: #4978f8;
+}
+
+img {
+  width: 100%;
+}
+
+#sign-up__form-submit-button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 3.5px;
+  font-size: 1rem;
+  background: hsl(224deg, 93%, 58%);
+  border: none;
+  color: hsl(240deg, 75%, 98%);
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
+  display: block;
+  margin: auto;
+  font-weight: 600;
+  white-space: normal;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 85%;
+  margin-top: 1rem;
+  margin-bottom: 4.5;
+  overflow-wrap: break-word;
+}
+#sign-up__form-submit-button:hover {
+  background: #4978f8;
+}
+
+.input-container[data-error] #sign-up__form-emailAddress:checked {
+  border: solid 5px red;
+}
+
+@media screen and (min-width: 768px) {
+  #sign-up__form-submit-button {
+    margin: 2rem 0;
+    padding: 1.8rem;
+    width: 40%;
+    font-size: clamp(1rem, 0.8vw + 0.2rem, 1.6rem);
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.nav__logo-img img {
+  width: 9rem;
+}
+
+.navigation ul {
+  display: flex;
+}
+.navigation ul li {
+  margin-left: 2rem;
+  list-style: none;
+  font-size: clamp(1.2rem, 1vw + 0.2rem, 3rem);
+  margin-bottom: 0.6rem;
+}
+.navigation ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: "Raleway", sans-serif;
+  color: hsl(243deg, 87%, 12%);
+}
+
+header .header__image {
+  padding: 0 3rem;
+}
+header .header__image img {
+  margin-top: 9rem;
+}
+
+.header__text-form {
+  color: hsl(243deg, 87%, 12%);
+  line-height: 1.5;
+}
+.header__text-form h1 {
+  font-size: clamp(2.3rem, 2.5vw + 0.2rem, 6rem);
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.header__text-form p {
+  font-weight: 500;
+}
+.header__text-form:not(.curve-image) {
+  padding: 3rem;
+}
+
+#header__text-form__form-emailAddress {
+  width: 100%;
+  padding: 1rem 0 1rem 2rem;
+  border-radius: 3.5px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  border: 2px solid black;
+  outline: none;
+}
+#header__text-form__form-emailAddress::placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+#header__text-form__form-emailAddress:invalid {
+  border: solid 2px rgb(255, 72, 72);
+}
+
+.curve-image {
+  background: url(../images/bg-curve-mobile.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 5rem;
+  width: 100%;
+  padding: 0;
+  margin-top: 5.5rem;
+}
+
+.info {
+  background: hsl(240deg, 75%, 98%);
+  padding: 1.2rem 2rem 1.2rem;
+}
+.info .info__image {
+  padding: 3rem;
+}
+.info h2 {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  color: hsl(243deg, 87%, 12%);
+  margin-top: 5.5rem;
+  margin-bottom: 1.5rem;
+}
+.info .info__text .info__text-info p {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.info .info__text .info__text-info .info__text-info__sec-par {
+  margin-bottom: 2rem;
+}
+.info .info__text a {
+  text-decoration: none;
+  color: hsl(170deg, 45%, 43%);
+  font-size: 1.4rem;
+  font-weight: 500;
+  block-size: min-content;
+  transition: all 0.2s ease-in;
+}
+.info .info__text a::after {
+  content: "";
+  background: url(../images/icon-arrow.svg) no-repeat;
+  background-size: cover;
+  width: 1.5rem;
+  height: 1.3rem;
+  display: inline-block;
+}
+.info .info__text a:hover {
+  color: #64c4b4;
+}
+.info .info__text .info__text-info__underline {
+  margin: auto;
+  height: 0.1rem;
+  background-color: hsl(170deg, 45%, 43%);
+  margin-top: 0.5rem;
+  width: 14.4rem;
+  transition: all 0.2s ease-in;
+}
+.info .info__text .info__text-info__underline:hover {
+  color: #64c4b4;
+}
+
+.info__text-quote {
+  padding: 4rem 4rem 8rem;
+}
+
+.info__text-quote-container {
+  background-color: #fff;
+  padding: 2rem 1em 2rem 2rem;
+  border-radius: 3.5px;
+  box-shadow: 0 3px 12px 1px hsl(240deg, 58%, 95%);
+}
+.info__text-quote-container .info__text-quote-img {
+  background: url(../images/icon-quotes.svg) no-repeat;
+  background-position: top 2rem;
+  background-size: 1.5rem;
+  height: 1.5rem;
+}
+.info__text-quote-container p {
+  text-align: left;
+  margin-top: 1rem;
+  font-size: clamp(1.1rem, 0.8vw + 0.2rem, 1.4rem);
+  line-height: 1.7;
+  font-weight: 500;
+}
+.info__text-quote-container figcaption {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.info__text-quote-container figcaption img {
+  width: 2.5rem;
+  border-radius: 50%;
+  justify-self: center;
+}
+.info__text-quote-container figcaption .info__text-quote__name p {
+  margin: 0;
+  font-size: clamp(1rem, 0.7vw + 0.2rem, 1.2rem);
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+.info__text-quote-container figcaption .info__text-quote__name p span {
+  display: block;
+  font-size: clamp(0.7rem, 0.5vw + 0.2rem, 1rem);
+}
+
+.sign-up {
+  padding: 3.5rem 3.5rem 7.5rem;
+  background: hsl(238deg, 22%, 44%);
+  color: hsl(240deg, 75%, 98%);
+}
+.sign-up h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(2rem, 2.2vw + 0.2rem, 3.5rem);
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+.sign-up p {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.sign-up #sign-up__form-emailAddress:invalid {
+  border: solid 3px rgb(255, 72, 72);
+}
+.sign-up .input-container[data-error]::after {
+  content: attr(data-error);
+}
+.sign-up #sign-up__form-emailAddress {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 3.5px;
+  margin-bottom: 0.5;
+  width: 85%;
+  border: none;
+  outline: none;
+}
+.sign-up #sign-up__form-emailAddress::placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+
+footer {
+  background: hsl(243deg, 87%, 12%);
+  padding: 6rem 3rem;
+  text-align: left;
+  color: hsl(240deg, 75%, 98%);
+}
+footer img {
+  width: 18rem;
+  filter: brightness(0) invert(1);
+  margin-bottom: 3.5rem;
+}
+footer .footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem;
+}
+
+.footer__content-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__content-contact .footer__content-contact-con {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.footer__content-contact .footer__content-contact-con p {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+.footer__content-contact .footer__content-contact-icon {
+  font-size: 2rem;
+}
+
+.footer__content__navigation ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer__content__navigation ul a {
+  color: #fff;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.footer__content__navigation ul a:hover {
+  color: hsl(238deg, 22%, 44%);
+}
+
+.footer__content-social-media {
+  text-align: center;
+}
+.footer__content-social-media a {
+  font-size: 2rem;
+  color: #fff;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.footer__content-social-media a:hover {
+  color: hsl(238deg, 22%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    text-align: left;
+  }
+  nav {
+    padding: 5rem 9rem 0;
+  }
+  .navigation ul li {
+    margin-left: 5rem;
+  }
+  .nav__logo-img img {
+    width: 17rem;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+    align-items: center;
+  }
+  .header__image {
+    grid-area: b;
+  }
+  .header__text-form {
+    text-align: left;
+  }
+  .header__text-form h1 {
+    font-family: "Raleway", sans-serif;
+  }
+  .header__text-form:not(.curve-image) {
+    padding: 0 9rem;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 3rem;
+  }
+  form #header__text-form__form-emailAddress {
+    margin: 0;
+    width: 55%;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+  }
+  form #header__text-form__form-submit-button {
+    margin: 0 0 0 2rem;
+    width: 30%;
+  }
+  .curve-image {
+    background: url(../images/bg-curve-desktop.svg) no-repeat;
+    background-size: cover;
+    height: 7.5rem;
+    margin-top: 17rem;
+  }
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+    align-items: center;
+    padding: 9rem 9rem 3rem;
+    column-gap: 6rem;
+  }
+  .info .info__image {
+    grid-area: b;
+    padding-right: 0;
+    padding-top: 0;
+  }
+  .info .info__image img {
+    width: 95%;
+  }
+  .info h2 {
+    font-size: clamp(2.3rem, 2.5vw + 0.2rem, 6rem);
+    margin-bottom: 5rem;
+  }
+  .info .info__text .info__text-info p {
+    padding-left: 0;
+    width: 90%;
+  }
+  .info .info__text .info__text-info__underline {
+    margin: 0.5rem 0;
+    width: 18rem;
+  }
+  .info .info__text a {
+    font-size: clamp(1.5rem, 1.3vw + 0.2rem, 1.8rem);
+  }
+  .info__text-quote {
+    padding: 4rem 4rem 8rem 0;
+    width: 40rem;
+  }
+  .info__text-quote-container {
+    padding: 3rem;
+  }
+  .info__text-quote-container figcaption {
+    margin-top: 1.2rem;
+  }
+  .info__text-quote-container figcaption img {
+    width: 3.5rem;
+  }
+  .info__text-quote-container figcaption .info__text-quote__name p {
+    margin-left: 0.8rem;
+  }
+  .info__text-quote-container figcaption .info__text-quote__name p span {
+    font-weight: 400;
+  }
+  .sign-up {
+    padding: 8rem 9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25rem;
+  }
+  .sign-up p {
+    line-height: 1.7;
+  }
+  .sign-up form {
+    display: flex;
+    flex-direction: column;
+  }
+  .sign-up #sign-up__form-emailAddress {
+    padding: 1.8rem;
+    border: none;
+    width: 100%;
+  }
+  .sign-up #sign-up__form-emailAddress::placeholder {
+    color: hsl(0deg, 0%, 75%);
+  }
+  footer {
+    padding: 11rem 15rem 11rem 9rem;
+  }
+  footer .footer__content {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 12rem;
+  }
+  .footer__content__navigation ul a {
+    text-align: center;
+  }
+  .footer__content-social-media {
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
